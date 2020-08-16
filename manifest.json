@@ -1,0 +1,13 @@
+{
+  "name": "Countdown",
+  "description": "Erlaubt einen Text und Zeitpunkt festzulegen um einen Countdown anzuzeigen.",
+  "version": "0.0.1",
+  "author": "Marc Vornetran",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [ "background.js" ]
+    }
+  },
+  "permissions": [ "storage" ]
+}

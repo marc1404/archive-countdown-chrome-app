@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de" ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <title>Countdown</title>
+        <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body ng-controller="controller">
+        <div class="container">
+            <div class="page-header">
+                <h1>Countdown</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="text">Text</label>
+                    <input id="text" type="text" class="form-control" placeholder="Feierabend in" ng-model="text">
+                </div>
+                <div class="col-sm-6">
+                    <label for="time">Zeitpunkt</label>
+                    <input id="time" type="datetime-local" class="form-control" ng-model="time">
+                </div>
+            </div>
+            <hr/>
+            <span ng-bind="text"></span> <span ng-bind="countdown"></span>
+        </div>
+        <script src="vendor/jquery-2.1.4.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="vendor/angular.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
